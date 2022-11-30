@@ -1,0 +1,39 @@
+.cat button.slick-arrow {
+  width: 40px;
+  height: 40px;
+}
+.cat button.slick-arrow.slick-prev {
+  left: -4rem;
+}
+.cat button.slick-arrow.slick-next {
+  right: -4rem;
+}
+.cat button.slick-arrow.slick-prev::before,
+.cat button.slick-arrow.slick-next::before {
+  color: black;
+  font-size: 40px;
+}
+.cat .img_box {
+  width: 100%;
+  /* height: 35vh; */
+  aspect-ratio: 1 / 1;
+  min-height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1040px) {
+  .cat button.slick-arrow.slick-prev {
+    left: -2rem;
+    z-index: 9;
+  }
+  .cat button.slick-arrow.slick-next {
+    right: -2rem;
+    z-index: 9;
+  }
+}

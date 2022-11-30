@@ -1,0 +1,120 @@
+.main-image > img {
+  display: block;
+  width: 100%;
+}
+.main-carousel .center-sect {
+  margin-top: -23.7em;
+}
+.main-carousel .center-sect .bg_color_inner {
+  padding: 0.3rem;
+  padding-left: 0.5rem;
+}
+.main-carousel .center-sect .bg_color_inner button {
+  background: transparent;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.main-carousel .center-sect .bg_color_inner button:focus-visible {
+  background: transparent;
+  border: none;
+}
+.main-carousel .center-sect h6,
+.main-carousel .center-sect p {
+  margin: 0px;
+}
+.main-carousel .center-sect .slick-slider {
+  background-color: white;
+  padding: 15px 10px;
+}
+.main-carousel .center-sect .slick-track {
+  padding: 0 !important;
+  margin: 0;
+}
+.main-carousel .center-sect .slick-prev:before {
+  color: black;
+  /* margin-left:20px; */
+}
+
+.main-carousel .center-sect .slick-next:before {
+  color: black;
+  /* margin-right:40px !important; */
+}
+.main-carousel .center-sect .slick-list {
+  padding: 0;
+}
+
+.main-carousel .center-sect .card-img-overlay {
+  padding: 0;
+}
+.main-carousel .center-sect .slick-list {
+  padding: 0 !important ;
+}
+.main-carousel .center-sect button.slick-arrow {
+  z-index: 5;
+}
+.main-carousel .center-sect .main-image {
+  height: 15rem;
+  overflow: hidden;
+}
+.main-carousel .center-sect .main-image img {
+  width: 100%;
+}
+/* .main-carousel .center-sect button.slick-arrow::before{
+    font-size: 30px !important;
+  }  */
+.main-carousel .center-sect .slick-slide {
+  padding: 0 5px;
+}
+.bg_color {
+  border: 1px solid peachpuff;
+}
+.slick-slide .bg_color {
+  background: peachpuff;
+  overflow: hidden;
+}
+@media only screen and (max-width: 668px) {
+  .main-carousel .center-sect button.slick-arrow.slick-next {
+    right: -3px;
+  }
+  .main-carousel .center-sect button.slick-arrow.slick-prev {
+    left: -3px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+@media only screen and (max-width: 1199px) {
+  .main-carousel .center-sect {
+    margin-top: -6em;
+  }
+  .main-carousel .center-sect .main-image {
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 986px) {
+  .main-carousel .center-sect .main-image {
+    height: 9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-carousel .center-sect .main-image {
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-carousel .center-sect .main-image {
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main-carousel .center-sect {
+    margin-top: 0em;
+  }
+  .main-carousel .center-sect .slick-list {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.advertisment-images {
+  background-color: white;
+}
+.advertisment-img > img {
+  display: block;
+  width: 100%;
+}
+.hover_content .card-img-overlay {
+  opacity: 0;
+  background-color: transparent;
+  transform: translate(0px, 34px);
+  transition: all 0.3s ease-in-out;
+}
+.hover_content:hover .card-img-overlay {
+  opacity: 1;
+  background-color: #00000021;
+  transform: translate(0px, 0px);
+}
+.hover_content .card-img-overlay .content {
+  /* height: 100%; */
+  align-items: center;
+  padding-top: 6rem;
+}

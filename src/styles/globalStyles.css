@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: primary-mont;
+  src: url("../assets/fonts/Mont-Regular.otf");
+}
+@font-face {
+  font-family: primary-mont-bold;
+  src: url("../assets/fonts/Mont-Bold.otf");
+}
+:root {
+  --ff-poppins: "Poppins", sans-serif;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: primary-mont-bold;
+}
+.root {
+  overflow-x: hidden !important;
+}
+.card,
+.card-img,
+.card-img-overlay {
+  background-color: none;
+  border: none;
+  padding: 0;
+}

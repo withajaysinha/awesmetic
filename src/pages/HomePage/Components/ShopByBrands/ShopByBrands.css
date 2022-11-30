@@ -1,0 +1,16 @@
+.shopbybrand-img {
+  max-width: 8rem;
+  height: 80px;
+  margin: auto;
+}
+.shopbybrand-img > img {
+  height: 100%;
+}
+@media only screen and (max-width: 868px) {
+  .shopbybrand-img {
+    height: 50px;
+  }
+  .shopbybrand-img > img {
+    height: 80%;
+  }
+}

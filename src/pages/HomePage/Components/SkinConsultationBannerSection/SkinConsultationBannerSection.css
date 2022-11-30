@@ -1,0 +1,21 @@
+.banner-consultation {
+  padding: 7rem !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.banner-consultation h4 {
+  font-weight: 300;
+  font-family: Poppins;
+}
+.banner-consultation h1 {
+  font-weight: 900;
+}
+@media only screen and (min-width: 375px) and (max-width: 786px) {
+  .banner-consultation {
+    padding: 25px !important;
+  }
+}

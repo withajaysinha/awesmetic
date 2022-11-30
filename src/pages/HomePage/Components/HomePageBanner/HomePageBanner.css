@@ -1,0 +1,116 @@
+.card-img {
+  border-radius: 0px;
+}
+.main-carousel .homepage_banner .col-12 img {
+  max-height: 55vh;
+}
+.main-carousel .main-carousel-inner .card-img {
+  background: linear-gradient(180deg, #1c232c, #37414d, #f2f2f2);
+  height: 120vh;
+}
+.main-text,
+.homepage_banner {
+  padding-top: 8vh;
+}
+.main-banner .slick-prev:before {
+  color: black;
+}
+
+.main-banner .slick-next:before {
+  color: black;
+}
+h1.title_banner {
+  font-size: 3rem;
+}
+h1.title_banner::after {
+  content: "";
+  display: block;
+  width: 2.8rem;
+  border-top: 1px solid white;
+  padding: 0.1em 0;
+}
+.main-text p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.btn-theme-round {
+  border-radius: 50px;
+}
+.main-carousel .big-image button.slick-arrow {
+  z-index: 9;
+  top: 30%;
+}
+.main-carousel .big-image button.slick-arrow.slick-next {
+  right: 3rem;
+}
+.main-carousel .big-image button.slick-arrow.slick-prev {
+  left: 3rem;
+}
+.main-carousel .big-image button.slick-arrow.slick-next::before {
+  content: "\f054";
+  font: normal normal normal 2rem/1 FontAwesome;
+  font-size: 2rem;
+  color: white;
+}
+.main-carousel .big-image button.slick-arrow.slick-prev::before {
+  content: "\f053";
+  font: normal normal normal 2rem/1 FontAwesome;
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 868px) {
+  .main-text {
+    padding-top: 4vh;
+  }
+  .main-carousel {
+    min-height: 65vh;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .center-sect {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .main-carousel .big-image button.slick-arrow.slick-next {
+    right: 1rem;
+  }
+  .main-carousel .big-image button.slick-arrow.slick-prev {
+    left: 1rem;
+  }
+  .main-carousel .main-carousel-inner .card-img {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-carousel .main-carousel-inner .card-img {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .main-carousel .main-carousel-inner .card-img {
+    height: 100vh;
+  }
+  .main-text,
+  .homepage_banner {
+    padding: 0;
+    padding-top: 5vh;
+  }
+  h1.title_banner::after {
+    margin: auto;
+  }
+  .main-text {
+    padding-top: 55vh;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main-carousel .main-carousel-inner .card-img {
+    height: 90vh;
+  }
+  .main-text {
+    padding-top: 45vh;
+  }
+}

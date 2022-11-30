@@ -1,0 +1,51 @@
+.login_user_container {
+  max-width: 60%;
+  margin: 5rem auto;
+}
+.login_container {
+  border: 2px solid #c5c5c5;
+  border-radius: 5px;
+}
+.input_email > input {
+  border: none;
+  outline: none;
+  border: 2px solid #c5c5c5;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.forget_password a {
+  color: black;
+}
+.login_with_facebook button {
+  width: 100%;
+}
+.login_with_facebook {
+  /* margin-right: 12px; */
+  border: 2px solid #c5c5c5;
+  background-color: transparent;
+  border-radius: 0% !important;
+}
+.login_with_google {
+  border: 2px solid #c5c5c5;
+  background-color: transparent;
+  border-radius: 0% !important;
+}
+.login_icons {
+  max-width: 1.2rem;
+  margin-right: 7px;
+}
+.login_icons > img {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 568px) {
+  .login_user_container {
+    max-width: 80%;
+  }
+}
+.pl-0 {
+  padding-left: 0px !important;
+}
+.pr-0 {
+  padding-right: 0px !important;
+}
