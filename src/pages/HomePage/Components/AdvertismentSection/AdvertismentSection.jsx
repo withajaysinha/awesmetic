@@ -1,7 +1,25 @@
 import React from "react";
 import "./AdvertismentSection.css";
-import { homePageAssets } from "../../../../assets/homePageAssets";
+import axios from "axios";
 const AdvertismentSection = () => {
+  const [advertismentData, setAdvertismentData] = React.useState();
+
+  React.useEffect(() => {
+    axios
+      .get("https://awesmatic.vistamatrix.in/api/customer/sliders/list")
+      .then((res) => {
+        setAdvertismentData(
+          res.data.data.filter(
+            (deals) => deals.display_type === "Featured List"
+          )
+        );
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, []);
+  console.log(advertismentData);
+  if (!advertismentData) return <></>;
   return (
     <>
       <div className="container advertisment-images mb-4 p-3">
@@ -14,8 +32,9 @@ const AdvertismentSection = () => {
                     <div className="card-img">
                       <img
                         loading="lazy"
-                        src={homePageAssets.advertismentImagesArray[0]}
+                        src={advertismentData[0].banner}
                         className="w-100"
+                        alt=""
                       />
                     </div>
                     <div className="card-img-overlay ">
@@ -40,8 +59,9 @@ const AdvertismentSection = () => {
                       <div className="card-img">
                         <img
                           loading="lazy"
-                          src={homePageAssets.advertismentImagesArray[1]}
+                          src={advertismentData[1].banner}
                           className="w-100"
+                          alt="imh"
                         />
                       </div>
                       <div className="card-img-overlay ">
@@ -66,8 +86,9 @@ const AdvertismentSection = () => {
                         <div className="card-img">
                           <img
                             loading="lazy"
-                            src={homePageAssets.advertismentImagesArray[2]}
+                            src={advertismentData[2].banner}
                             className="w-100"
+                            alt=""
                           />
                         </div>
                         <div className="card-img-overlay ">
@@ -91,8 +112,9 @@ const AdvertismentSection = () => {
                         <div className="card-img">
                           <img
                             loading="lazy"
-                            src={homePageAssets.advertismentImagesArray[3]}
+                            src={advertismentData[3].banner}
                             className="w-100"
+                            alt=""
                           />
                         </div>
                         <div className="card-img-overlay ">
